@@ -2,7 +2,7 @@
     --primary: #b6895b;
     --bg: black;
   }
-  
+
   * {
     margin: 0px;
     padding: 0px;
@@ -11,14 +11,14 @@
     border: none;
     text-decoration: none;
   }
-  
+
   body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     background-color: var(--bg);
     color: white;
   }
-  
+
   /* ini css navbar*/
   .navbar {
     display: flex;
@@ -33,7 +33,7 @@
     right: 0;
     z-index: 9999;
   }
-  
+
   .navbar .navbar-logo {
     font-size: 2rem;
     font-weight: 800;
@@ -43,7 +43,7 @@
   .navbar .navbar-logo span {
     color: var(--primary);
   }
-  
+
   .navbar .navbar-nav a {
     color: white;
     display: inline-block;
@@ -53,7 +53,7 @@
   .navbar .navbar-nav a:hover {
     color: var(--primary);
   }
-  
+
   .navbar .navbar-nav a::after {
     content: "";
     display: block;
@@ -62,16 +62,16 @@
     transform: scaleX(0);
     transition: 0.2s linear;
   }
-  
+
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.5);
   }
-  
+
   .navbar .navbar-extra a {
     color: white;
     margin: 0.5rem;
   }
-  
+
   .navbar .navbar-extra a:hover {
     color: #b6895b;
   }
@@ -91,7 +91,7 @@
     background-position: center;
     position: relative;
   }
-  
+
   .hero::after {
     content: "";
     display: block;
@@ -105,23 +105,23 @@
       rgba(255, 255, 255, 0) 50%
     );
   }
-  
+
   .hero .content {
     padding: 1.4rem 7%;
     max-width: 60rem;
   }
-  
+
   .hero .content h1 {
     font-size: 5em;
     color: white;
     text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
     line-height: 1.2;
   }
-  
+
   .hero .content h1 span {
     color: var(--primary);
   }
-  
+
   .hero .content p {
     font-size: 1.6rem;
     margin-top: 0.5rem;
@@ -130,7 +130,7 @@
     text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
     mix-blend-mode: difference;
   }
-  
+
   .hero .content .cta {
     margin: 1rem;
     display: inline-block;
@@ -141,7 +141,7 @@
     border-radius: 0.5rem;
     box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   }
-  
+
   /*about section*/
 .about,
 .menu,
@@ -227,6 +227,49 @@
 .menu .row .menu-card .menu-card-title {
   margin-top: 1rem auto 0.5rem;
 }
+/*footer*/
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+footer .social {
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+}
+
+footer .social a {
+  color: white;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+footer .social a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+
+footer .links {
+  margin-bottom: 1.4rem;
+}
+
+footer .links a {
+  color: white;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
 
 /*contact section*/
 .contact .row {
@@ -235,19 +278,19 @@
     background-color: #222;
     flex-wrap: wrap;
   }
-  
+
   .contact .row .map {
     flex: 1 1 45rem;
     width: 100%;
     object-fit: cover;
   }
-  
+
   .contact .row form {
     flex: 1 1 43rem;
     padding: 5rem 2rem;
     text-align: center;
   }
-  
+
   .contact .row form .input-group {
     display: flex;
     align-items: center;
@@ -256,7 +299,7 @@
     border: 1px solid #eee;
     padding-left: 2rem;
   }
-  
+
   .contact .row form .input-group input {
     width: 100%;
     padding: 2rem;
@@ -264,7 +307,7 @@
     background: none;
     color: white;
   }
-  
+
   .contact .row .btn {
     margin-top: 3rem;
     display: inline-block;
@@ -274,7 +317,7 @@
     background-color: var(--primary);
     cursor: pointer;
   }
-  
+
 /*laptop*/
 @media (max-width: 1366px) {
     html {
@@ -286,7 +329,7 @@
     html {
       font-size: 62.5%;
     }
-  
+
     #hamburger-menu {
       display: inline-block;
     }
@@ -299,7 +342,7 @@
       height: 100vh;
       transition: 0.3s;
     }
-  
+
     .navbar .navbar-nav.active {
       right: 0;
     }
@@ -316,42 +359,42 @@
     .navbar .navbar-nav a:hover::after {
       transform: scaleX (0.1);
     }
-  
+
       .about .row {
         flex-wrap: wrap;
       }
-  
+
       .about .row .about-img img {
         height: 24rem;
         object-fit: cover;
         object-position: center;
       }
-  
+
       .about .row .content {
         padding: 0;
       }
-  
+
       .about .row .content h3 {
         margin-top: 1rem;
         font-size: 2rem;
       }
-  
+
       .about .row .content p {
         font-size: 1.5rem;
       }
-  
+
     .menu p {
       font-size: 1.2rem;
     }
-  
+
     .contact .row {
       flex-wrap: wrap;
     }
-  
+
     .contact .row .map {
       height: 30rem;
     }
-  
+
     .contact .row form {
       padding-top: 0;
     }
@@ -363,4 +406,3 @@
       color: var();
     }
   }
-  
